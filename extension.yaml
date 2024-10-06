@@ -1,0 +1,64 @@
+name: send-message
+version: 1.0.0
+specVersion: v1beta
+
+displayName: Send Message with Nimba SMS
+description: Send messages using the Nimba SMS API based on content written to a specified Cloud Firestore collection.
+
+license: Apache-2.0
+sourceUrl: https://github.com/nimbasms/nimbasms-firebase
+
+billingRequired: false
+externalServices:
+  - name:  Nimba SMS
+    PricingUri: https://www.nimbasms.com/nos-tarifs
+
+author:
+  authorName: Nimba SMS
+  url: https://www.nimbasms.com
+
+contributors:
+  - authorName: Harouna Diallo
+    email: harouna@nimbasms.com
+    url: https://github.com/hadpro24
+
+roles:
+  - role: datastore.user
+    reason: Allows this extension to access Cloud Firestore to read and process added message documents.
+
+resources:
+  - name: sendMessage
+    type: firebaseextensions.v1beta.function
+    description: >-
+      HTTP request-triggered function that responds with a specified message
+    properties:
+      httpsTrigger: {}
+      runtime: "nodejs18"
+  - name: addContact
+    type: firebaseextensions.v1beta.function
+    description: >-
+      HTTP request-triggered function that save contact to your nimbasms account
+    properties:
+      httpsTrigger: {}
+      runtime: nodejs18
+
+params:
+  - param: NIMBASMS_ACCOUNT_SID
+    label: Nimba SMS Service ID (SID)
+    description: >-
+      What is your Nimba SMS Account Sid? You can find in in your dashboard.
+    type: string
+    required: true
+  - param: NIMBASMS_AUTH_TOKEN
+    label: Nimba SMS Auth Token
+    description: >-
+      What is your Nimba SMS Auth Token? You can find it in your dashboard.
+    type: string
+    required: true
+  - param: NIMASMS_COUNTRY
+    label: Country Region
+    description: >-
+      What country are you using (Guinea or Senegal)?
+    type: string
+    default: GN
+    required: false

@@ -1,0 +1,37 @@
+{
+  "name": "send-message",
+  "description": "Send messages with the Nimba API by adding documents to a Firestore collection",
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "nimbasms": "^1.0.0"
+  },
+  "devDependencies": {
+    "axios": "^1.3.2",
+    "chai": "^4.3.7",
+    "eslint": "^8.15.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "mocha": "^10.2.0"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint --max-warnings=0 ..",
+    "lint:fix": "./node_modules/.bin/eslint --max-warnings=0 --fix ..",
+    "mocha": "mocha '**/*.spec.js'",
+    "test": "(cd integration-tests && firebase emulators:exec 'npm run mocha' -P demo-test)",
+    "generate-readme": "firebase ext:info .. --markdown > ../README.md",
+    "firebase:publish": "firebase ext:dev:publish nimbasms/send-message",
+    "build": "npm run compile"
+  },
+  "private": true,
+  "keywords": [
+    "nimbasms",
+    "firebase"
+  ],
+  "author": "Nimba SMS <open-source@nimbasms.com> (https://www.nimbasms.com)",
+  "contributors": [
+    "Nimba SMS <harouna@nimbasms.com> (https://github.com/hadpro24)"
+  ]
+}
