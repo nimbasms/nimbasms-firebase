@@ -25,7 +25,7 @@
     "firebase:publish": "firebase ext:dev:publish nimbasms/nimbasmsapi",
     "build": "npm run compile"
   },
-  "private": true,
+  "private": false,
   "keywords": [
     "nimbasms",
     "firebase"

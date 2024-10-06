@@ -1,5 +1,41 @@
 {
+  "name": "nimbasms-firebase",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Repository of Nimba SMS authored extensions for Firebase",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna run --parallel clean",
+    "build": "lerna run --parallel build",
+    "postinstall": "lerna bootstrap --no-ci && npm run clean && npm run build",
+    "generate-readmes": "lerna run --parallel generate-readme",
+    "firebase:publish": "lerna run firebase:publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nimbasms/nimbasms-firebase.git"
+  },
+  "keywords": [
+    "nimbasms",
+    "sms",
+    "firebase"
+  ],
+  "author": "Nimba SMS. <open-source@nimbasms.com> (https://www.nimbsms.com)",
+  "contributors": [
+    "Harouna Diallo <harouna@nimbasms.com> (https://github.com/hadpro24)"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nimbasms/nimbasms-firebase/issues"
+  },
+  "homepage": "https://github.com/nimbasms/nimbasms-firebase#readme",
+  "devDependencies": {
+    "firebase-tools": "^10.1.2",
+    "lerna": "^4.0.0",
+    "typescript": "^4.4.3"
+  },
   "dependencies": {
     "nimbasms": "^1.0.0"
-  }
+  },
 }
