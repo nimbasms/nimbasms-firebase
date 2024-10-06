@@ -1,5 +1,5 @@
 {
-  "name": "send-message",
+  "name": "nimbasmsapi",
   "description": "Send messages with the Nimba API by adding documents to a Firestore collection",
   "main": "index.js",
   "dependencies": {
@@ -22,7 +22,7 @@
     "mocha": "mocha '**/*.spec.js'",
     "test": "(cd integration-tests && firebase emulators:exec 'npm run mocha' -P demo-test)",
     "generate-readme": "firebase ext:info .. --markdown > ../README.md",
-    "firebase:publish": "firebase ext:dev:publish nimbasms/send-message",
+    "firebase:publish": "firebase ext:dev:publish nimbasms/nimbasmsapi",
     "build": "npm run compile"
   },
   "private": true,
