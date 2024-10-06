@@ -8,6 +8,7 @@
     "bootstrap": "lerna bootstrap",
     "clean": "lerna run --parallel clean",
     "build": "lerna run --parallel build",
+    "compile": "lerna run --parallel build",
     "postinstall": "lerna bootstrap --no-ci && npm run clean && npm run build",
     "generate-readmes": "lerna run --parallel generate-readme",
     "firebase:publish": "lerna run firebase:publish"
