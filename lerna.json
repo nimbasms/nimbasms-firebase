@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "sendMessage/functions",
+    "addContact/functions"
+  ],
+  "version": "0.0.1"
+}

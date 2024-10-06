@@ -21,7 +21,7 @@
     "sms",
     "firebase"
   ],
-  "author": "Nimba SMS. <open-source@nimbasms.com> (https://www.nimbsms.com)",
+  "author": "Nimba SMS <open-source@nimbasms.com> (https://www.nimbasms.com)",
   "contributors": [
     "Harouna Diallo <harouna@nimbasms.com> (https://github.com/hadpro24)"
   ],
@@ -37,5 +37,5 @@
   },
   "dependencies": {
     "nimbasms": "^1.0.0"
-  },
+  }
 }
