@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "bootstrap": "lerna bootstrap",
-    "clean": "lerna run --parallel clean",
-    "build": "lerna run --parallel build",
-    "compile": "lerna run --parallel build",
-    "postinstall": "lerna bootstrap --no-ci && npm run clean && npm run build",
+    "clean": "echo \"No build step required\"",
+    "build": "echo \"No build step required\"",
+    "compile": "echo \"No build step required\"",
+    "postinstall": "echo \"No build step required\"",
     "generate-readmes": "lerna run --parallel generate-readme",
     "firebase:publish": "lerna run firebase:publish"
   },

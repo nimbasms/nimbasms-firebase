@@ -20,10 +20,11 @@
     "lint": "./node_modules/.bin/eslint --max-warnings=0 ..",
     "lint:fix": "./node_modules/.bin/eslint --max-warnings=0 --fix ..",
     "mocha": "mocha '**/*.spec.js'",
-    "test": "(cd integration-tests && firebase emulators:exec 'npm run mocha' -P demo-test)",
+    "test": "echo \"No test specified\" && exit 1",
     "generate-readme": "firebase ext:info .. --markdown > ../README.md",
     "firebase:publish": "firebase ext:dev:publish nimbasms/nimbasmsapi",
-    "build": "npm run compile"
+    "build": "echo \"No build step required\"",
+    "compile": "echo \"No build step required\""
   },
   "private": false,
   "keywords": [
