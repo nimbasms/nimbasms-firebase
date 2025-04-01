@@ -10,9 +10,6 @@ sourceUrl: https://github.com/nimbasms/nimbasms-firebase
 
 icon: icon.png
 billingRequired: false
-externalServices:
-  - name:  Send Messages with Nimba SMS
-    PricingUri: https://www.nimbasms.com/nos-tarifs
 
 author:
   authorName: Nimba SMS
