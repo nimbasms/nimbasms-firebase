@@ -1,5 +1,5 @@
 name: nimbasmsapi
-version: 1.0.2
+version: 1.0.3
 specVersion: v1beta
 
 displayName: Send Message with Nimba SMS
@@ -8,6 +8,7 @@ description: Send messages using the Nimba SMS API based on content written to a
 license: Apache-2.0
 sourceUrl: https://github.com/nimbasms/nimbasms-firebase
 
+icon: icon.png
 billingRequired: false
 externalServices:
   - name:  Send Messages with Nimba SMS

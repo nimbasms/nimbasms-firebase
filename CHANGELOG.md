@@ -19,3 +19,9 @@ Add SendMessage and addContact functions
 
 Update release 1.0.2 release of the _Nimba SMS_ extension.
 Update type of parameters
+
+
+## Version 1.0.3
+
+Update release 1.0.3 release of the _Nimba SMS_ extension.
+Add logo icon
