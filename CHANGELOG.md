@@ -7,3 +7,9 @@ Initial release of the _Nimba SMS_ extension.
 
 First release 1.0.1 release of the _Nimba SMS_ extension.
 Add SendMessage and addContact functions
+
+
+## Version 1.0.1
+
+Update release 1.0.1 release of the _Nimba SMS_ extension.
+Add SendMessage and addContact functions
