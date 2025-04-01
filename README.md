@@ -74,3 +74,8 @@ Usage of this extension also requires you to have a [Nimba SMS Account](https://
 This extension will operate with the following project IAM roles:
 
 * datastore.user (Reason: Allows this extension to access Cloud Firestore to read and process added message documents.)
+
+# Build and deployer
+First update version in `extensions.yaml` and `CHANGELOG.md` and pussh to `main`
+
+them : `firebase ext:dev:upload nimbasmsapi/nimbasmsapi`
